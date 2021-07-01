@@ -1,6 +1,6 @@
 from flask import render_template, request, redirect
 from app import app
-from models.event_list import *  #
+from models.event_list import *
 from models.event import Event
 
 @app.route("/events")
