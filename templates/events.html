@@ -16,7 +16,25 @@
         {% endfor %}
     </div>
 
+<h2>Add New Event</h2>    
+    <form action="/events" method="post"></form>
+        <Date for="date">Date</label>
+        <input type="text" name="date" id="date">
 
+        <label for="name_of_event">Name of Event</label>
+        <input type="text" name="name_of_event" id="name_of_event">
 
+        <label for="number_of_guests">Number of Guests</label>
+        <input type="text" name="number_of_guests" id="number_of_guests">
+
+        <label for="room_location">Room Location</label>
+        <input type="text" name="room_location" id="room_location">
+
+        <label for="description">Description</label>
+        <textarea name="description" id="description" rows="1" cols="4"></textarea>
+
+        <input type="submit" value="Add Event">
+
+        </form>
 
 {% endblock %}
